@@ -15,8 +15,6 @@ if __name__ == '__main__':
         model.load_state_dict(torch.load(model_name + ".pt", map_location="cpu"))
         model.eval()
 
-        num_features = 6
-
         # Define sample input
         input_sample = torch.rand(
         1,               # Batch size 
@@ -36,8 +34,8 @@ if __name__ == '__main__':
         filepath = model_name + ".onnx"
         
         model.to_onnx(
-            filepath, 
-            (input_sample), 
+            filepath,
+            input_sample,
             export_params=True, 
             opset_version=17, 
             input_names=["input"], 
