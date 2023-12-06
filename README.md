@@ -1,4 +1,4 @@
-# Multimodal Hand Tracking for Extended Reality Musical Instruments (deep learning model)
+# Multimodal Hand Tracking for Extended Reality Musical Instruments (Deep Learning Model)
 
 This repository contains the machine learning code of the multimodal XR Hand Tracking system for Extended Reality Musical Instruments (XRMIs), as described in our research paper "Combining Vision and EMG-Based Hand Tracking for Extended Reality Musical Instruments".
 Included are files for processing and analyzing sEMG (surface electromyography) data using the Myo armband with Python.
